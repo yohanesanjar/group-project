@@ -17,24 +17,24 @@
   }
   
   .team .team_member{
-    background: #8e8b8b;
+    background: #D3E5FF;
     margin: 5px;
     margin-bottom: 50px;
     width: 300px;
     padding: 20px;
     line-height: 20px;
-    color: #e9dede;  
+    color: #0e0c0c;  
     position: relative;
   }
   
   .team .team_member h3{
-    color: #2b12ca;
+    color: #0e0c0c;
     font-size: 26px;
     margin-top: 50px;
   }
   
   .team .team_member p.role{
-    color: #ccc;
+    color: rgb(17, 16, 16);
     margin: 12px 0;
     font-size: 12px;
     text-transform: uppercase;
@@ -48,7 +48,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #8e8b8b;
+    background: #D3E5FF;
   }
   
   .team .team_member .team_img img{
@@ -85,7 +85,6 @@
   /* atas */
   .about .about-content .left{
     width: 45%;
-    /* tambahan display mbi justify ben tengah item gambare */
     display: flex;
     justify-content: center;
   }
@@ -103,30 +102,15 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .about .about-content .right .text span{
-    color: crimson;
-  }
   .about .about-content .right p{
     text-align: justify;
   }
-  .about .about-content .right a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-  }
+
   
   /* bawah */
   
   .about1 .about1-content .right{
     width: 45%;
-    /* tambahan display mbi justify ben tengah item gambare */
     display: flex;;
     justify-content: center;
   }
@@ -144,21 +128,6 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .about1 .about1-content .left .text span{
-    color: crimson;
-  }
   .about1 .about1-content .left p{
     text-align: justify;
-  }
-  .about1 .about1-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
   }
