@@ -1,4 +1,4 @@
-const url = 'https://63514bb1dfe45bbd55bc4257.mockapi.io/user/adi/';
+const url = 'https://63514a2cdfe45bbd55bc13c2.mockapi.io/api/v1/';
 
 async function getMockApi(url) {
   const response = await fetch(url);
@@ -15,7 +15,7 @@ document.getElementById('formSignIn').addEventListener('submit', function (e) {
   const password = document.getElementById('password').value;
 
   if (username && password) {
-    getMockApi(`${url}/user`).then(function (users) {
+    getMockApi(`${url}/users`).then(function (users) {
       const loggingUser = users.find(function (user) {
         return user.username === username;
       });
