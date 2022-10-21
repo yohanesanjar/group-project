@@ -1,0 +1,37 @@
+.video_container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: none;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    align-items: center;
+}
+.text{
+    align-items: center;
+    position: absolute;
+    top: 78%;
+    left: 45%;
+}
+
+.text1{
+    align-items: center;
+    position: absolute;
+    top: 87%;
+    left: 10%;
+}
+
+.container{
+    width: 500px;
+    height: 100px;
+    background-color: none;
+    position: absolute;
+
+}
