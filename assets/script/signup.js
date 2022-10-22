@@ -1,4 +1,4 @@
-const url = 'https://63514a2cdfe45bbd55bc13c2.mockapi.io/api/v1/';
+const url = 'https://634cf141acb391d34a8f7b4a.mockapi.io';
 
 async function getMockApi(url) {
     const response = await fetch(url);
@@ -52,9 +52,8 @@ document.getElementById('formSignUp').addEventListener('submit', function (e) {
                         document.getElementById('fullname').value = '';
                         document.getElementById('username').value = '';
                         document.getElementById('password').value = '';
-                        localStorage.setItem('token', 'user sudah login');
                         alert('berhasil register')
-                        window.location = 'index.html';
+                        window.location = '../../signin.html';
                     })
             }
         });

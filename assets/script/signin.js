@@ -1,4 +1,4 @@
-const url = 'https://63514a2cdfe45bbd55bc13c2.mockapi.io/api/v1/';
+const url = 'https://634cf141acb391d34a8f7b4a.mockapi.io';
 
 async function getMockApi(url) {
   const response = await fetch(url);
@@ -24,8 +24,7 @@ document.getElementById('formSignIn').addEventListener('submit', function (e) {
         if (loggingUser.password === password) {
           alert('login berhasil....');
           localStorage.setItem('token', 'user sudah login');
-          window.location = 'index.html';
-      
+          window.location = '../../artikel.html';      
         } else {
           alert('password salah!!!');
         }

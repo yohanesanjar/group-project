@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
-
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5584AC;">
@@ -31,31 +30,37 @@
                     <li class="nav-item">
                         <a class="nav-link" href="artikel.html">Artikel</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Video</a>
+                    <li id="videoDisabled" class="nav-item">
+                        <a class="nav-link disabled" href="#">Video</a>
                     </li>
+                    <li id="video" class="nav-item"></li>
                     <li class="nav-item">
                         <a class="nav-link" href="tentang.html">Tentang</a>
                     </li>
-                    <li id="avatar" class="nav-item" style="display: none;">
-                        <a class="nav-link" href="tentang.html">Avatar</a>
+                    <li id="masuk" class="nav-item ps-5">
+                        <a class="btn btn-primary" style="background-color: #1C3879;border-color: #1C3879;" href="signin.html" role="button">Sign In</a>
                     </li>
+                    <li id="avatar" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                          <li><a class="dropdown-item" href="#">log out</a></li>
+                        </ul>
+                      </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Content -->
     <section class="main">
-        <div id="form-register" style="display: block;">
-            <div class="container-fluid" id="header">
-                <div class="container" id="header-content">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-3 px-5">
-                            <h3 style="font-weight: bold;">Temukan Minat dan Bakatmu!</h3>
-                            <p>Pelajari lebih lanjut mengenai Seni Rupa!</p>
-                            <a class="btn btn-primary" style="background-color: #1C3879;" href="signup.html"
-                                role="button">Register Now</a>
-                        </div>
+        <div class="container-fluid" id="header">
+            <div class="container" id="header-content">
+                <div class="row">
+                    <div class="col-md-8 offset-md-3 px-5">
+                        <h3 style="font-weight: bold;">Temukan Minat dan Bakatmu!</h3>
+                        <p>Pelajari lebih lanjut mengenai Seni Rupa!</p>
+                        <a class="btn btn-primary" style="background-color: #1C3879;" href="signup.html" role="button">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -66,15 +71,13 @@
             </div>
             <div class="row pt-5">
                 <div class="col-lg-7 px-3 pb-5">
-                    <img class="img-fluid" src="./assets/img/image1.jpg" style="height: 100%;width: 100%;"
-                        alt="ilustrator">
+                    <img class="img-fluid" src="./assets/img/image1.jpg" style="height: 100%;width: 100%;" alt="ilustrator">
                 </div>
                 <div class="col col-lg-5 px-5 py-5">
                     <div class="row">
                         <h2 class="pb-2">Course</h2>
                         <div class="col-3 pb-3">
-                            <img class="img-fluid" src="./assets/img/video.png" style="height: 100%; width: 100%;"
-                                alt="video.png">
+                            <img class="img-fluid" src="./assets/img/video.png" style="height: 100%; width: 100%;" alt="video.png">
                         </div>
                         <div class="col-9">
                             <p>Menyediakan video pembelajaran dan tutorial seni rupa
@@ -84,8 +87,7 @@
                     <div class="row py-4">
                         <h2 class="pb-2">Blog</h2>
                         <div class="col-3 pb-3">
-                            <img class="img-fluid" src="./assets/img/blog.png" style="height: 100%; width: 100%;"
-                                alt="blog.png">
+                            <img class="img-fluid" src="./assets/img/blog.png" style="height: 100%; width: 100%;" alt="blog.png">
                         </div>
                         <div class="col-9">
                             <p>Menyediakan informasi seputar seni rupa</p>
@@ -94,7 +96,7 @@
                 </div>
             </div>
         </div>
-    </section>
+      </section>
     <!-- Footer -->
     <section class="py-5 text-center text-white" style="background-color: #5584AC;">
         <div class="container">
@@ -120,27 +122,12 @@
             </div>
         </div>
     </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/script/index.js"></script>
+    <script src="assets/script/before-after.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
-    <script>
-        let name=localStrorage.getItem('name')?localStorage.getItem('name'):''
-        console.log(name);
-        if(name=='')
-        {
-            alert('kamu butuh login dulu');
-            window.location.href="https://63514a2cdfe45bbd55bc13c2.mockapi.io/api/v1/";
-        }
-        function Logout()
-        {
-            localStorage.removeItem('users');
-            localStorage.removeItem('password');
-            window.location.href="https://63514a2cdfe45bbd55bc13c2.mockapi.io/api/v1/";
-        }
-    </script>
 </body>
-
 
 </html>
