@@ -24,7 +24,7 @@ document.getElementById('formSignIn').addEventListener('submit', function (e) {
         if (loggingUser.password === password) {
           alert('login berhasil....');
           localStorage.setItem('token', 'user sudah login');
-          window.location = '../../artikel.html';      
+          window.location = '../../index.html';      
         } else {
           alert('password salah!!!');
         }
