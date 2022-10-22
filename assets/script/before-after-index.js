@@ -9,6 +9,7 @@ $(document).ready(function () {
         document.getElementById('avatar').style.display = 'block'
         document.getElementById('masuk').style.display = 'none'
         document.getElementById('videoDisabled').style.display = 'none'
+        document.getElementById('registNow').style.display = 'none'
 
         video.appendChild(videoEl)
     } else {
