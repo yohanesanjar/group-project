@@ -29,8 +29,8 @@
                   <li class="nav-item">
                       <a class="nav-link" href="artikel.html">Artikel</a>
                   </li>
-                  <li id="videoDisabled" class="nav-item">
-                      <a class="nav-link disabled" href="#">Video</a>
+                  <li id="video-before" class="nav-item">
+                    <a class="nav-link" href="#" onclick="beforeSign()">Video</a>
                   </li>
                   <li id="video" class="nav-item"></li>
                   <li class="nav-item">
@@ -44,7 +44,7 @@
                           <i class="bi bi-person-circle"></i>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-lg-end">
-                        <li><a class="dropdown-item" href="#">log out</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="deleteItem()">log out</a></li>
                       </ul>
                     </li>
               </ul>
@@ -88,5 +88,6 @@
     </script>
     <script src="assets/script/before-after.js"></script>
     <script src="assets/script/video.js"></script>
+    <script src="./assets/script/logout.js"></script>
     </body>
 </html>
