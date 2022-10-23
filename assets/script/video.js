@@ -4,7 +4,7 @@ let api_url = 'https://634cf141acb391d34a8f7b4a.mockapi.io/video-learning'
 async function getVideos(){
     let response = await fetch(api_url)
     let result = await response.json()
-    console.log(result)
+    // console.log(result)
     showVideos(result)
 }
 getVideos()
